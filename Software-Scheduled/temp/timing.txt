@@ -1,0 +1,109 @@
+
+#
+# CprE 381 toolflow Timing dump
+#
+
+FMax: 50.86mhz Clk Constraint: 20.00ns Slack: 0.34ns
+
+The path is given below
+
+ ===================================================================
+ From Node    : id_ex_reg:ID_EX_pipe_reg|reg:ALUOp_reg|dffg:\g_dff:0:DFF_N|s_Q
+ To Node      : ex_mem_reg:EX_MEM_pipe_reg|reg:ALUOut_reg|dffg:\g_dff:31:DFF_N|s_Q
+ Launch Clock : iCLK
+ Latch Clock  : iCLK
+ Data Arrival Path:
+ Total (ns)  Incr (ns)     Type  Element
+ ==========  ========= ==  ====  ===================================
+      0.000      0.000           launch edge time
+      3.079      3.079  R        clock network delay
+      3.311      0.232     uTco  id_ex_reg:ID_EX_pipe_reg|reg:ALUOp_reg|dffg:\g_dff:0:DFF_N|s_Q
+      3.311      0.000 FF  CELL  ID_EX_pipe_reg|ALUOp_reg|\g_dff:0:DFF_N|s_Q|q
+      3.930      0.619 FF    IC  alu_control|process_0~0|datab
+      4.336      0.406 FR  CELL  alu_control|process_0~0|combout
+      4.994      0.658 RR    IC  alu_control|process_0~1|datad
+      5.149      0.155 RR  CELL  alu_control|process_0~1|combout
+      5.787      0.638 RR    IC  alu_control|o_ALUSel[2]~6|datab
+      6.219      0.432 RF  CELL  alu_control|o_ALUSel[2]~6|combout
+      6.452      0.233 FF    IC  alu_control|o_ALUSel[2]~7|datac
+      6.733      0.281 FF  CELL  alu_control|o_ALUSel[2]~7|combout
+      7.002      0.269 FF    IC  proc_alu|adder|\g_ripple_carry:0:FULL_ADDER_N|or_1|o_F~1|datac
+      7.283      0.281 FF  CELL  proc_alu|adder|\g_ripple_carry:0:FULL_ADDER_N|or_1|o_F~1|combout
+      7.582      0.299 FF    IC  proc_alu|adder|\g_ripple_carry:1:FULL_ADDER_N|or_1|o_F~0|dataa
+      8.006      0.424 FF  CELL  proc_alu|adder|\g_ripple_carry:1:FULL_ADDER_N|or_1|o_F~0|combout
+      8.256      0.250 FF    IC  proc_alu|adder|\g_ripple_carry:2:FULL_ADDER_N|or_1|o_F~0|datad
+      8.381      0.125 FF  CELL  proc_alu|adder|\g_ripple_carry:2:FULL_ADDER_N|or_1|o_F~0|combout
+      8.680      0.299 FF    IC  proc_alu|adder|\g_ripple_carry:3:FULL_ADDER_N|or_1|o_F~0|dataa
+      9.104      0.424 FF  CELL  proc_alu|adder|\g_ripple_carry:3:FULL_ADDER_N|or_1|o_F~0|combout
+      9.353      0.249 FF    IC  proc_alu|adder|\g_ripple_carry:4:FULL_ADDER_N|or_1|o_F~0|datad
+      9.478      0.125 FF  CELL  proc_alu|adder|\g_ripple_carry:4:FULL_ADDER_N|or_1|o_F~0|combout
+      9.729      0.251 FF    IC  proc_alu|adder|\g_ripple_carry:5:FULL_ADDER_N|or_1|o_F~0|datad
+      9.854      0.125 FF  CELL  proc_alu|adder|\g_ripple_carry:5:FULL_ADDER_N|or_1|o_F~0|combout
+     10.105      0.251 FF    IC  proc_alu|adder|\g_ripple_carry:6:FULL_ADDER_N|or_1|o_F~0|datad
+     10.230      0.125 FF  CELL  proc_alu|adder|\g_ripple_carry:6:FULL_ADDER_N|or_1|o_F~0|combout
+     10.482      0.252 FF    IC  proc_alu|adder|\g_ripple_carry:7:FULL_ADDER_N|or_1|o_F~0|datad
+     10.607      0.125 FF  CELL  proc_alu|adder|\g_ripple_carry:7:FULL_ADDER_N|or_1|o_F~0|combout
+     10.856      0.249 FF    IC  proc_alu|adder|\g_ripple_carry:8:FULL_ADDER_N|or_1|o_F~0|datad
+     10.981      0.125 FF  CELL  proc_alu|adder|\g_ripple_carry:8:FULL_ADDER_N|or_1|o_F~0|combout
+     11.231      0.250 FF    IC  proc_alu|adder|\g_ripple_carry:9:FULL_ADDER_N|or_1|o_F~0|datad
+     11.356      0.125 FF  CELL  proc_alu|adder|\g_ripple_carry:9:FULL_ADDER_N|or_1|o_F~0|combout
+     11.989      0.633 FF    IC  proc_alu|adder|\g_ripple_carry:10:FULL_ADDER_N|or_1|o_F~0|datad
+     12.114      0.125 FF  CELL  proc_alu|adder|\g_ripple_carry:10:FULL_ADDER_N|or_1|o_F~0|combout
+     12.364      0.250 FF    IC  proc_alu|adder|\g_ripple_carry:11:FULL_ADDER_N|or_1|o_F~0|datad
+     12.489      0.125 FF  CELL  proc_alu|adder|\g_ripple_carry:11:FULL_ADDER_N|or_1|o_F~0|combout
+     12.739      0.250 FF    IC  proc_alu|adder|\g_ripple_carry:12:FULL_ADDER_N|or_1|o_F~0|datad
+     12.864      0.125 FF  CELL  proc_alu|adder|\g_ripple_carry:12:FULL_ADDER_N|or_1|o_F~0|combout
+     13.163      0.299 FF    IC  proc_alu|adder|\g_ripple_carry:13:FULL_ADDER_N|or_1|o_F~0|dataa
+     13.587      0.424 FF  CELL  proc_alu|adder|\g_ripple_carry:13:FULL_ADDER_N|or_1|o_F~0|combout
+     13.836      0.249 FF    IC  proc_alu|adder|\g_ripple_carry:14:FULL_ADDER_N|or_1|o_F~0|datad
+     13.961      0.125 FF  CELL  proc_alu|adder|\g_ripple_carry:14:FULL_ADDER_N|or_1|o_F~0|combout
+     14.211      0.250 FF    IC  proc_alu|adder|\g_ripple_carry:15:FULL_ADDER_N|or_1|o_F~0|datad
+     14.336      0.125 FF  CELL  proc_alu|adder|\g_ripple_carry:15:FULL_ADDER_N|or_1|o_F~0|combout
+     14.720      0.384 FF    IC  proc_alu|adder|\g_ripple_carry:16:FULL_ADDER_N|or_1|o_F~0|datad
+     14.845      0.125 FF  CELL  proc_alu|adder|\g_ripple_carry:16:FULL_ADDER_N|or_1|o_F~0|combout
+     15.228      0.383 FF    IC  proc_alu|adder|\g_ripple_carry:17:FULL_ADDER_N|or_1|o_F~0|datad
+     15.353      0.125 FF  CELL  proc_alu|adder|\g_ripple_carry:17:FULL_ADDER_N|or_1|o_F~0|combout
+     15.604      0.251 FF    IC  proc_alu|adder|\g_ripple_carry:18:FULL_ADDER_N|or_1|o_F~0|datad
+     15.729      0.125 FF  CELL  proc_alu|adder|\g_ripple_carry:18:FULL_ADDER_N|or_1|o_F~0|combout
+     16.121      0.392 FF    IC  proc_alu|adder|\g_ripple_carry:19:FULL_ADDER_N|or_1|o_F~0|datad
+     16.246      0.125 FF  CELL  proc_alu|adder|\g_ripple_carry:19:FULL_ADDER_N|or_1|o_F~0|combout
+     16.500      0.254 FF    IC  proc_alu|adder|\g_ripple_carry:20:FULL_ADDER_N|or_1|o_F~0|datad
+     16.625      0.125 FF  CELL  proc_alu|adder|\g_ripple_carry:20:FULL_ADDER_N|or_1|o_F~0|combout
+     16.883      0.258 FF    IC  proc_alu|adder|\g_ripple_carry:21:FULL_ADDER_N|or_1|o_F~0|datac
+     17.164      0.281 FF  CELL  proc_alu|adder|\g_ripple_carry:21:FULL_ADDER_N|or_1|o_F~0|combout
+     17.458      0.294 FF    IC  proc_alu|adder|\g_ripple_carry:22:FULL_ADDER_N|or_1|o_F~0|datab
+     17.883      0.425 FF  CELL  proc_alu|adder|\g_ripple_carry:22:FULL_ADDER_N|or_1|o_F~0|combout
+     18.136      0.253 FF    IC  proc_alu|adder|\g_ripple_carry:23:FULL_ADDER_N|or_1|o_F~0|datad
+     18.261      0.125 FF  CELL  proc_alu|adder|\g_ripple_carry:23:FULL_ADDER_N|or_1|o_F~0|combout
+     18.551      0.290 FF    IC  proc_alu|adder|\g_ripple_carry:24:FULL_ADDER_N|or_1|o_F~0|datab
+     18.976      0.425 FF  CELL  proc_alu|adder|\g_ripple_carry:24:FULL_ADDER_N|or_1|o_F~0|combout
+     19.227      0.251 FF    IC  proc_alu|adder|\g_ripple_carry:25:FULL_ADDER_N|or_1|o_F~0|datad
+     19.352      0.125 FF  CELL  proc_alu|adder|\g_ripple_carry:25:FULL_ADDER_N|or_1|o_F~0|combout
+     20.235      0.883 FF    IC  proc_alu|adder|\g_ripple_carry:26:FULL_ADDER_N|or_1|o_F~0|datad
+     20.360      0.125 FF  CELL  proc_alu|adder|\g_ripple_carry:26:FULL_ADDER_N|or_1|o_F~0|combout
+     20.600      0.240 FF    IC  proc_alu|adder|\g_ripple_carry:27:FULL_ADDER_N|or_1|o_F~0|datad
+     20.725      0.125 FF  CELL  proc_alu|adder|\g_ripple_carry:27:FULL_ADDER_N|or_1|o_F~0|combout
+     20.965      0.240 FF    IC  proc_alu|adder|\g_ripple_carry:28:FULL_ADDER_N|or_1|o_F~0|datad
+     21.090      0.125 FF  CELL  proc_alu|adder|\g_ripple_carry:28:FULL_ADDER_N|or_1|o_F~0|combout
+     21.325      0.235 FF    IC  proc_alu|adder|\g_ripple_carry:29:FULL_ADDER_N|or_1|o_F~0|datad
+     21.450      0.125 FF  CELL  proc_alu|adder|\g_ripple_carry:29:FULL_ADDER_N|or_1|o_F~0|combout
+     21.701      0.251 FF    IC  proc_alu|adder|\g_ripple_carry:30:FULL_ADDER_N|or_1|o_F~0|datad
+     21.826      0.125 FF  CELL  proc_alu|adder|\g_ripple_carry:30:FULL_ADDER_N|or_1|o_F~0|combout
+     22.053      0.227 FF    IC  proc_alu|adder|\g_ripple_carry:31:FULL_ADDER_N|xor_2|o_F|datad
+     22.203      0.150 FR  CELL  proc_alu|adder|\g_ripple_carry:31:FULL_ADDER_N|xor_2|o_F|combout
+     22.407      0.204 RR    IC  proc_alu|out_mux|Mux0~6|datad
+     22.562      0.155 RR  CELL  proc_alu|out_mux|Mux0~6|combout
+     22.562      0.000 RR    IC  EX_MEM_pipe_reg|ALUOut_reg|\g_dff:31:DFF_N|s_Q|d
+     22.649      0.087 RR  CELL  ex_mem_reg:EX_MEM_pipe_reg|reg:ALUOut_reg|dffg:\g_dff:31:DFF_N|s_Q
+ Data Required Path:
+ Total (ns)  Incr (ns)     Type  Element
+ ==========  ========= ==  ====  ===================================
+     20.000     20.000           latch edge time
+     22.958      2.958  R        clock network delay
+     22.990      0.032           clock pessimism removed
+     22.970     -0.020           clock uncertainty
+     22.988      0.018     uTsu  ex_mem_reg:EX_MEM_pipe_reg|reg:ALUOut_reg|dffg:\g_dff:31:DFF_N|s_Q
+ Data Arrival Time  :    22.649
+ Data Required Time :    22.988
+ Slack              :     0.339
+ ===================================================================

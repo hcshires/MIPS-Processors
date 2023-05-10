@@ -1,0 +1,12 @@
+.DS_Store
+proj/work/
+proj/transcript
+proj/vsim.wlf
+proj/mips_processor_1.cr.mti
+output
+*.pyc*
+temp/synth_error.log
+proj/mips_processor_1_linux.cr.mti
+proj/mips_processor_1_win.cr.mti
+ModelSimContainer
+QuartusWork

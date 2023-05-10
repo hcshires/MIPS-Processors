@@ -1,0 +1,110 @@
+
+#
+# CprE 381 toolflow Timing dump
+#
+
+FMax: 22.49mhz Clk Constraint: 20.00ns Slack: -24.47ns
+
+The path is given below
+
+ ===================================================================
+ From Node    : mips_pc:PC|s_Out[6]
+ To Node      : regfile:reg_file|mips_reg_preset:sp_reg|s_Out[2]
+ Launch Clock : iCLK
+ Latch Clock  : iCLK
+ Data Arrival Path:
+ Total (ns)  Incr (ns)     Type  Element
+ ==========  ========= ==  ====  ===================================
+      0.000      0.000           launch edge time
+      3.673      3.673  R        clock network delay
+      3.905      0.232     uTco  mips_pc:PC|s_Out[6]
+      3.905      0.000 FF  CELL  PC|s_Out[6]|q
+      4.304      0.399 FF    IC  s_IMemAddr[6]~4|datad
+      4.429      0.125 FF  CELL  s_IMemAddr[6]~4|combout
+      6.047      1.618 FF    IC  IMem|ram~33210|datab
+      6.440      0.393 FF  CELL  IMem|ram~33210|combout
+      7.142      0.702 FF    IC  IMem|ram~33211|dataa
+      7.533      0.391 FR  CELL  IMem|ram~33211|combout
+     10.581      3.048 RR    IC  IMem|ram~33212|datac
+     10.866      0.285 RR  CELL  IMem|ram~33212|combout
+     12.748      1.882 RR    IC  IMem|ram~33223|datac
+     13.035      0.287 RR  CELL  IMem|ram~33223|combout
+     14.044      1.009 RR    IC  IMem|ram~33234|datab
+     14.478      0.434 RF  CELL  IMem|ram~33234|combout
+     14.710      0.232 FF    IC  IMem|ram~33277|datac
+     14.990      0.280 FF  CELL  IMem|ram~33277|combout
+     15.222      0.232 FF    IC  IMem|ram~33320|datac
+     15.503      0.281 FF  CELL  IMem|ram~33320|combout
+     15.731      0.228 FF    IC  IMem|ram~33321|datad
+     15.856      0.125 FF  CELL  IMem|ram~33321|combout
+     16.131      0.275 FF    IC  IMem|ram~33492|dataa
+     16.508      0.377 FR  CELL  IMem|ram~33492|combout
+     19.931      3.423 RR    IC  alu_control|Equal17~3|dataa
+     20.331      0.400 RR  CELL  alu_control|Equal17~3|combout
+     21.155      0.824 RR    IC  alu_control|o_ALUSel[0]~2|dataa
+     21.515      0.360 RF  CELL  alu_control|o_ALUSel[0]~2|combout
+     22.295      0.780 FF    IC  alu_control|o_ALUSel[0]~6|datad
+     22.420      0.125 FF  CELL  alu_control|o_ALUSel[0]~6|combout
+     22.680      0.260 FF    IC  alu_control|o_ALUSel[2]~7|datac
+     22.960      0.280 FF  CELL  alu_control|o_ALUSel[2]~7|combout
+     23.221      0.261 FF    IC  alu_control|o_ALUSel[0]~13|datad
+     23.346      0.125 FF  CELL  alu_control|o_ALUSel[0]~13|combout
+     23.580      0.234 FF    IC  alu_control|o_ALUSel[0]~15|datac
+     23.861      0.281 FF  CELL  alu_control|o_ALUSel[0]~15|combout
+     24.328      0.467 FF    IC  proc_alu|comb~1|datac
+     24.609      0.281 FF  CELL  proc_alu|comb~1|combout
+     25.687      1.078 FF    IC  proc_alu|barrel_shift|\shift_16L:10:MUX|o_O~0|datad
+     25.837      0.150 FR  CELL  proc_alu|barrel_shift|\shift_16L:10:MUX|o_O~0|combout
+     26.040      0.203 RR    IC  proc_alu|barrel_shift|\shift_16L:10:MUX|o_O~1|datad
+     26.195      0.155 RR  CELL  proc_alu|barrel_shift|\shift_16L:10:MUX|o_O~1|combout
+     26.946      0.751 RR    IC  proc_alu|barrel_shift|\shift_4L:10:MUX|o_O~0|datad
+     27.101      0.155 RR  CELL  proc_alu|barrel_shift|\shift_4L:10:MUX|o_O~0|combout
+     27.308      0.207 RR    IC  proc_alu|barrel_shift|\shift_4L:10:MUX|o_O~2|datad
+     27.463      0.155 RR  CELL  proc_alu|barrel_shift|\shift_4L:10:MUX|o_O~2|combout
+     28.590      1.127 RR    IC  proc_alu|barrel_shift|\shift_1L:7:MUX|o_O~1|datac
+     28.875      0.285 RR  CELL  proc_alu|barrel_shift|\shift_1L:7:MUX|o_O~1|combout
+     29.101      0.226 RR    IC  proc_alu|out_mux|Mux24~5|datad
+     29.256      0.155 RR  CELL  proc_alu|out_mux|Mux24~5|combout
+     29.457      0.201 RR    IC  proc_alu|out_mux|Mux24~6|datac
+     29.727      0.270 RF  CELL  proc_alu|out_mux|Mux24~6|combout
+     29.953      0.226 FF    IC  proc_alu|out_mux|Mux24~10|datad
+     30.078      0.125 FF  CELL  proc_alu|out_mux|Mux24~10|combout
+     30.304      0.226 FF    IC  proc_alu|out_mux|Mux24~8|datad
+     30.429      0.125 FF  CELL  proc_alu|out_mux|Mux24~8|combout
+     32.590      2.161 FF    IC  DMem|ram~33259|datab
+     33.013      0.423 FR  CELL  DMem|ram~33259|combout
+     33.217      0.204 RR    IC  DMem|ram~33260|datad
+     33.372      0.155 RR  CELL  DMem|ram~33260|combout
+     40.485      7.113 RR    IC  DMem|ram~33263|datad
+     40.640      0.155 RR  CELL  DMem|ram~33263|combout
+     40.846      0.206 RR    IC  DMem|ram~33266|datad
+     40.985      0.139 RF  CELL  DMem|ram~33266|combout
+     41.210      0.225 FF    IC  DMem|ram~33267|datad
+     41.335      0.125 FF  CELL  DMem|ram~33267|combout
+     41.567      0.232 FF    IC  DMem|ram~33278|datac
+     41.848      0.281 FF  CELL  DMem|ram~33278|combout
+     42.262      0.414 FF    IC  DMem|ram~33279|datac
+     42.543      0.281 FF  CELL  DMem|ram~33279|combout
+     44.669      2.126 FF    IC  DMem|ram~33322|datab
+     45.092      0.423 FR  CELL  DMem|ram~33322|combout
+     45.297      0.205 RR    IC  DMem|ram~33323|datad
+     45.452      0.155 RR  CELL  DMem|ram~33323|combout
+     45.656      0.204 RR    IC  DMem|ram~33494|datad
+     45.811      0.155 RR  CELL  DMem|ram~33494|combout
+     46.015      0.204 RR    IC  alu_dmem_mux|Mux29~1|datad
+     46.170      0.155 RR  CELL  alu_dmem_mux|Mux29~1|combout
+     47.258      1.088 RR    IC  reg_file|sp_reg|s_Out[2]~0|datad
+     47.397      0.139 RF  CELL  reg_file|sp_reg|s_Out[2]~0|combout
+     47.397      0.000 FF    IC  reg_file|sp_reg|s_Out[2]|d
+     47.501      0.104 FF  CELL  regfile:reg_file|mips_reg_preset:sp_reg|s_Out[2]
+ Data Required Path:
+ Total (ns)  Incr (ns)     Type  Element
+ ==========  ========= ==  ====  ===================================
+     20.000     20.000           latch edge time
+     23.033      3.033  R        clock network delay
+     23.013     -0.020           clock uncertainty
+     23.031      0.018     uTsu  regfile:reg_file|mips_reg_preset:sp_reg|s_Out[2]
+ Data Arrival Time  :    47.501
+ Data Required Time :    23.031
+ Slack              :   -24.470 (VIOLATED)
+ ===================================================================

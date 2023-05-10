@@ -1,0 +1,98 @@
+QuestaSim-64 vcom 2022.2 Compiler 2022.04 Apr 25 2022
+Start time: 13:25:24 on Apr 25,2023
+vcom -2008 -work internal/ModelSimContainer/work proj/src/MIPS_types.vhd internal/testpy/tb.vhd proj/src/MIPS_types.vhd proj/src/Shifter/shift_left_2.vhd proj/src/5-32 Decoder/dec_5t32.vhd proj/src/Hazard Detection/hazard_detection_unit.vhd proj/src/Control/alu_control_logic.vhd proj/src/Control/ControlUnit.vhd proj/src/Control/branch_control_module.vhd proj/src/Sign Extender/sign_extender_32.vhd proj/src/ALU/mux2t1.vhd proj/src/ALU/andg2.vhd proj/src/ALU/ALU.vhd proj/src/ALU/full_adder.vhd proj/src/ALU/barrel_shifter.vhd proj/src/ALU/invg.vhd proj/src/ALU/Adder.vhd proj/src/ALU/mux2t1_N.vhd proj/src/ALU/ripple_adder.vhd proj/src/ALU/and_or_module.vhd proj/src/ALU/org2.vhd proj/src/ALU/slt_module.vhd proj/src/ALU/mux2t1_struct.vhd proj/src/ALU/Multiplier.vhd proj/src/ALU/xorg2.vhd proj/src/ALU/n_bit_inverter.vhd proj/src/Register File/regfile.vhd proj/src/Register File/mips_reg_preset.vhd proj/src/Register/dffg_sync.vhd proj/src/Register/mips_pc.vhd proj/src/Register/nbit_reg.vhd proj/src/Register/nbit_reg_sync_reset.vhd proj/src/Register/dffg.vhd proj/src/Mux/mux_Nt1.vhd proj/src/Pipeline Registers/EX-MEM.vhd proj/src/Pipeline Registers/MEM-WB.vhd proj/src/Pipeline Registers/IF-ID.vhd proj/src/Pipeline Registers/ID-EX.vhd proj/src/TopLevel/pc_source_module.vhd proj/src/TopLevel/mem.vhd proj/src/TopLevel/MIPS_Processor.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package MIPS_types
+-- Compiling package body MIPS_types
+-- Loading package MIPS_types
+-- Loading package std_logic_textio
+-- Loading package ENV
+-- Compiling entity tb
+-- Compiling architecture mixed of tb
+** Warning: proj/src/MIPS_types.vhd(15): (vcom-1615) Existing package 'MIPS_types' at line 15 will be overwritten.
+-- Compiling package MIPS_types
+** Warning: proj/src/MIPS_types.vhd(31): (vcom-1615) Existing package body 'MIPS_types(body)' at line 31 will be overwritten.
+-- Compiling package body MIPS_types
+-- Loading package MIPS_types
+-- Loading package NUMERIC_STD
+-- Compiling entity shift_left_2
+-- Compiling architecture dataflow of shift_left_2
+-- Compiling entity dec_5t32
+-- Compiling architecture dataflow of dec_5t32
+-- Compiling entity hazard_detection_unit
+-- Compiling architecture mixed of hazard_detection_unit
+-- Compiling entity alu_control_logic
+-- Compiling architecture behavioral of alu_control_logic
+-- Compiling entity control_unit
+-- Compiling architecture dataflow of control_unit
+-- Compiling entity branch_control_module
+-- Compiling architecture behavioral of branch_control_module
+-- Compiling entity sign_extender_32
+-- Compiling architecture dataflow of sign_extender_32
+-- Compiling entity mux2t1
+-- Compiling architecture dataflow of mux2t1
+-- Compiling entity andg2
+-- Compiling architecture dataflow of andg2
+-- Loading package MIPS_types
+-- Compiling entity ALU
+-- Compiling architecture mixed of ALU
+-- Compiling entity full_adder
+-- Compiling architecture structural of full_adder
+-- Compiling entity barrel_shifter
+-- Compiling architecture structural of barrel_shifter
+-- Compiling entity invg
+-- Compiling architecture dataflow of invg
+-- Compiling entity Adder
+-- Compiling architecture behavior of Adder
+-- Compiling entity mux2t1_N
+-- Compiling architecture structural of mux2t1_N
+-- Compiling entity ripple_adder
+-- Compiling architecture structural of ripple_adder
+-- Compiling entity and_or_module
+-- Compiling architecture dataflow of and_or_module
+-- Compiling entity org2
+-- Compiling architecture dataflow of org2
+-- Compiling entity slt_module
+-- Compiling architecture behavioral of slt_module
+-- Compiling entity mux2t1_struct
+-- Compiling architecture structural of mux2t1_struct
+-- Compiling entity Multiplier
+-- Compiling architecture behavior of Multiplier
+-- Compiling entity xorg2
+-- Compiling architecture dataflow of xorg2
+-- Compiling entity n_bit_inverter
+-- Compiling architecture structural of n_bit_inverter
+-- Compiling entity regfile
+-- Compiling architecture structural of regfile
+-- Compiling entity mips_reg_preset
+-- Compiling architecture behavioral of mips_reg_preset
+-- Compiling entity dffg_sync
+-- Compiling architecture mixed of dffg_sync
+-- Compiling entity mips_pc
+-- Compiling architecture behavioral of mips_pc
+-- Compiling entity reg
+-- Compiling architecture structural of reg
+-- Compiling entity reg_sync_reset
+-- Compiling architecture structural of reg_sync_reset
+-- Compiling entity dffg
+-- Compiling architecture mixed of dffg
+-- Compiling entity mux_Nt1
+-- Compiling architecture dataflow of mux_Nt1
+-- Compiling entity ex_mem_reg
+-- Compiling architecture structural of ex_mem_reg
+-- Compiling entity mem_wb_reg
+-- Compiling architecture structural of mem_wb_reg
+-- Compiling entity if_id_reg
+-- Compiling architecture structural of if_id_reg
+-- Compiling entity id_ex_reg
+-- Compiling architecture structural of id_ex_reg
+-- Compiling entity pc_source_module
+-- Compiling architecture dataflow of pc_source_module
+-- Compiling entity mem
+-- Compiling architecture rtl of mem
+-- Compiling entity MIPS_Processor
+-- Compiling architecture structure of MIPS_Processor
+End time: 13:25:25 on Apr 25,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 2

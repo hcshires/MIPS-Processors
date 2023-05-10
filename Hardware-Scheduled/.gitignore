@@ -1,0 +1,13 @@
+.DS_Store
+proj/work/
+proj/transcript
+proj/vsim.wlf
+proj/*.cr.mti
+proj/*.mpf
+output
+*.pyc*
+temp/synth_error.log
+proj/mips_processor_1_linux.cr.mti
+proj/mips_processor_1_win.cr.mti
+QuartusWork
+transcript
