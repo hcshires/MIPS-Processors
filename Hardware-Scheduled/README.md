@@ -6,7 +6,7 @@
 
 > Anthony Manschula: Team Member
 
-> Henry Shires: Team Member
+> Tony Manschula and Henry Shires: Team Member
 
 **IMPORTANT:** Please read the lab manual and `cpre381-toolflow.pdf` found in `/manuals` before proceeding.
 

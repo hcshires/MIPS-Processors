@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------
--- Tony Manschula [CPR E]
+-- Tony Manschula and Henry Shires [CPR E]
 -- Department of Electrical and Computer Engineering
 -- Iowa State University
 -------------------------------------------------------------------------

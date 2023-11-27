@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------
--- Tony Manschula
+-- Tony Manschula and Henry Shires
 -- Department of Electrical and Computer Engineering
 -- Iowa State University
 -------------------------------------------------------------------------
